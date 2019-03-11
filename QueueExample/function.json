@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "inMessage",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "my-input-queue",
+      "connection": "MyStorageConnectionAppSetting"
+    },
+    {
+      "name": "outMessage",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "my-output-queue",
+      "connection": "MyStorageConnectionAppSetting"
+    }
+  ]
+}
