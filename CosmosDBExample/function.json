@@ -1,0 +1,23 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "documents",
+      "type": "cosmosDBTrigger",
+      "direction": "in",
+      "databaseName": "cosmostest",
+      "collectionName": "mycollection",
+      "connectionStringSetting": "MyCosmosDBConnectionAppSetting",
+      "leaseCollectionName": "leases",
+      "createLeaseCollectionIfNotExists": true
+    },
+    {
+      "name": "$return",
+      "type": "cosmosDB",
+      "direction": "out",
+      "databaseName": "cosmostest",
+      "collectionName": "mycollection2",
+      "connectionStringSetting": "MyCosmosDBConnectionAppSetting"
+    }
+  ]
+}
