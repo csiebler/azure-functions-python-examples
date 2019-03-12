@@ -1,4 +1,4 @@
-# azure-functions-python-examples
+# Azure Functions (v2) in Python Examples
 
 This repository contains several examples for writing Azure Functions v2 in Python.
 
